@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+<title>Task Master</title>
+
+<style>
+html {
+  background: url("images/triceratops.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+  font-family: calibri;
+  background-color: rgba(255,255,255,0.1);
+  margin: 0;
+
+}
+
+.main {
+  overflow: auto;
+  margin-left:1px;
+  transition: margin-left .5s;
+  height:100vh;
+}
+
+.header {
+  top:0;
+  height: 5%;
+  width: 100%;
+  padding: 0px;
+}
+
+.navigation {
+  float:left;
+  height: 100vh;
+  margin:0;
+  margin-top:1%;
+  width: 1px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.navigation h2 {
+  box-sizing: border-box;
+  color: black;
+  height: 5%;
+  margin-bottom:0;
+  padding: 0;
+  margin-left: 20px;
+}
+.navigation .buttonbox{
+margin-top: 
+box-sizing: border-box;
+padding:0;
+}
+.navigation .button {
+  padding: 0;
+  text-align: left;
+  border: none;
+  background-color: Transparent;
+  text-indent: 25px;
+  width: 100%;
+  height: 30px;
+  color: black;
+  transition: 0.3s;
+}
+
+.navigation .button:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+
+.navigation .button:focus {
+  background-color: rgba(255,255,255,0.75);
+  border: none;
+  outline: none;}
+
+ .content {
+ padding:0;
+ height: 80%;
+ width: 100%;
+}
+.content .toolbar{
+height: 5%;
+}
+
+.content .list{
+  background-color: rgba(255,255,255,0.75);
+  height: 95%;
+  width: 80%;
+  overflow: auto;
+}
+.list .row {
+  font-size: 15px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  padding: 4px;
+  margin: 0;}
+
+.list .row:not(:last-child){
+  border-bottom: none;
+}
+
+.taskContent{
+display:none;
+}
+</style>
+</head>
+<body>
+<div id= "Navigation" class="navigation" onmouseover="openNav()" onmouseout="closeNav()">
+ <h2>Project</h2>
+ <div class="buttonbox">
+  <button class="button" href="Assignment.html">HeLlo</button>
+  <button class="button">Hello</button>
+  <button class="button">Hello</button>
+ </div>
+</div>
+<div id="Main" class="main">
+<div class="header">
+  <h1>Task Master</h1>
+</div>  
+<div class="content">  
+  <div class="toolbar"></div>
+  
+	<div class="list">
+	  <div class="row">Hello</div>
+	  <div class="taskContent">
+	  <input = "input"></input>
+	  </div>
+	  <div class="row">Hello</div>
+	</div>
+</div>
+
+<script>
+function openNav(){
+  document.getElementById("Navigation").style.width = "10%";
+  document.getElementById("Main").style.marginLeft = "10%";
+}
+function closeNav() {
+  document.getElementById("Navigation").style.width = "1px";
+  document.getElementById("Main").style.marginLeft= "1px";
+}
+</script>
+</body>
+
+
+</html>
